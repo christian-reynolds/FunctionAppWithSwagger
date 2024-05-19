@@ -1,0 +1,26 @@
+{
+  "version": "2.0",
+  "logging": {
+    "applicationInsights": {
+      "samplingSettings": {
+        "isEnabled": true,
+        "excludedTypes": "Request"
+      },
+      "enableLiveMetricsFilters": true
+    }
+  },
+  "extensions": {
+    "openapi": {
+      "info": {
+        "title": "My API",
+        "version": "1.0.0"
+      },
+      "servers": [
+        {
+          "url": "http://localhost:7071",
+          "description": "Local server"
+        }
+      ]
+    }
+  }
+}
