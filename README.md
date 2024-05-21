@@ -113,37 +113,9 @@ Contains local configuration settings:
 }
 ```
 
-## Deployment to Azure
+## Deployment
 
-1. **Login to Azure CLI**
-
-```sh
-az login
-```
-
-2. **Create a Resource Group (if not already created)**
-
-```sh
-az group create --name <ResourceGroupName> --location <Location>
-```
-
-3. **Create a Storage Account**
-
-```sh
-az storage account create --name <StorageAccountName> --location <Location> --resource-group <ResourceGroupName> --sku Standard_LRS
-```
-
-4. **Create a Function App**
-
-```sh
-az functionapp create --resource-group <ResourceGroupName> --consumption-plan-location <Location> --runtime dotnet --functions-version 3 --name <AppName> --storage-account <StorageAccountName>
-```
-
-5. **Deploy the Function App**
-
-```sh
-func azure functionapp publish <AppName>
-```
+Deploy the function to Azure using the Azure CLI or Visual Studio. Refer to the [official documentation](https://docs.microsoft.com/azure/azure-functions/functions-deploy-cli) for more details.
 
 ## Contributing
 
