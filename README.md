@@ -115,7 +115,7 @@ Contains local configuration settings:
 
 ## Deployment
 
-Deploy the function to Azure using the Azure CLI or Visual Studio. Refer to the [official documentation](https://docs.microsoft.com/azure/azure-functions/functions-deploy-cli) for more details.
+Deploy the function to Azure using the Azure CLI or Visual Studio. Refer to the [official documentation](https://learn.microsoft.com/en-us/cli/azure/functionapp/deployment?view=azure-cli-latest) for more details.
 
 ## Contributing
 
